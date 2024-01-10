@@ -1,3 +1,7 @@
+GOOGLE_CLIENT_ID = "Put your Google Client ID here."
+GOOGLE_CLIENT_SECRET = "Put your Google Client Secret here."
+os.environ["OPENAI_API_KEY"] = "Put your OpenAI API Key here."
+
 import json
 from flask import Flask, request, jsonify, render_template, redirect, url_for, session, make_response
 import assistants
