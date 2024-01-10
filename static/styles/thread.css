@@ -1,0 +1,164 @@
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.messagebar {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: #eee;
+}
+
+.messagebar textarea {
+  width: calc(100% - 84px);
+  height: 32px;
+  margin: 0;
+  margin-bottom: -16px;
+  font-size: 16px;
+}
+
+.messagebar button {
+  width: 64px;
+  height: 47px;
+  font-size: 14px;
+}
+
+.messagebar .buttons {
+  width: 100%;
+  height: 47px;
+  padding: 5px;
+  margin: 0;
+  margin-bottom: -10px;
+}
+
+.messagebar .buttons button {
+  width: calc(25% - 5px);
+  height: 47px;
+  padding: 5px;
+  margin: 0;
+}
+
+.loading {
+  width: 100%;
+  height: 47px;
+  padding: 5px;
+  margin: 0;
+  margin-bottom: -10px;
+  display: inline-flex;
+}
+
+.loading img {
+  width: 47px;
+  height: 47px;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.loading .loadingtext {
+  margin: 5px;
+  font-size: 24px;
+  font-weight: semi-bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.messagebar .explorelabel {
+  margin: 5px;
+  font-size: 24px;
+  font-weight: semi-bold;
+}
+
+.messagesentarea {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.message {
+  width: calc(100% - 10px);
+  padding: 5px;
+  animation: 0.25s ease-out 0s 1 slideInFromRight;
+}
+
+.usermessage {
+  background-color: #eee;
+}
+
+.assistantmessage {
+  background-color: #fafafa;
+}
+
+.message img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.message p {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.inactive {
+  display: none;
+}
+
+.messagesentarea {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+
+.tourmodal {
+  position: fixed;
+  z-index: 100;
+  width: 620px;
+  height: 500px;
+  top: calc(50% - 250px);
+  left: calc(50% - 310px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+
+.tourmodal iframe {
+  width: 620px;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+}
+
+.open {
+  opacity: 0.3;
+  pointer-events: auto;
+}
+
+.actived {
+  opacity: 1;
+  pointer-events: auto;
+}
